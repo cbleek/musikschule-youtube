@@ -145,52 +145,6 @@ $overlay-color: #fff;
 .tanz:hover {
   border: 1px solid yellow;
 }
-.effect {
-  text-align: center;
-  //display: inline-block;
-  //position: relative;
-  text-decoration: none;
-  color: $link-text-color;
-  text-transform: capitalize;
-  /* background-color: - add your own background-color */
-  font: {
-    family: 'Roboto', sans-serif; /* put your font-family */
-    size: 18px;
-  }
-  padding: 20px 0px;
-  width: 150px;
-  border-radius: $border-radius;
-  //overflow: hidden;
-}
 
-.effect.effect-3 {
-  transition: all 0.2s linear 0s;
-
-  &:before {
-    content: "\f178";
-    font-family: FontAwesome;
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    top: 100%;
-    left: 0px;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    font-size: 30px;
-    transition: all 0.2s linear 0s;
-  }
-
-  &:hover {
-    text-indent: -9999px;
-
-    &:before {
-      top: 0;
-      text-indent: 0;
-    }
-  }
-}
 
 </style>
