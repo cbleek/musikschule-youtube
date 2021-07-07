@@ -1,7 +1,7 @@
 <template>
   <q-page class="flex flex-center">
     <div class="musikschule">
-    <img src="/musikschule.jpg" usemap="#youtube" ismap="ismap" border="0">
+    <img src="musikschule.jpg" usemap="#youtube" ismap="ismap" border="0">
     <map name="youtube">
       <area alt="Streicher" title="Streicher" href="https://youtu.be/MaTpHKRBWds" coords="338,697,530,870" shape="rect">
       <area alt="Klavier" title="Klavier" href="https://youtu.be/GNjgwm0KEDc" coords="614,694,787,861" shape="rect">
