@@ -10,6 +10,7 @@ jobs:
       - name: Install and Build 🔧 
         run: |
           yarn
+          export VUE_ROUTER_BASE=/musikschule-youtube/
           node_modules/.bin/quasar build
 
       - name: Deploy 🚀
