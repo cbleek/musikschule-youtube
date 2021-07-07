@@ -8,5 +8,4 @@ jobs:
       - uses: actions/setup-node@v2
       - run: yarn
       - run: node_modules/.bin/quasar build
-      - run: mkdir docs
       - run: cp -a dist/spa/* docs/
