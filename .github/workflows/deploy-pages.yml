@@ -1,11 +1,20 @@
-name: deploy-pages
+name: Build and Deploy
 on: [push]
 jobs:
-  check-bats-version:
+  build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
-      - run: yarn
-      - run: VUE_ROUTER_BASE=musikschule-youtube/ node_modules/.bin/quasar build
-      - run: cp -a dist/spa/* docs/
+      - name: Checkout 🛎️
+        uses: actions/checkout@v2.3.1
+
+      - name: Install and Build 🔧 
+        run: |
+          yarn
+          node_modules/.bin/quasar build
+
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@4.1.4
+        with:
+          branch: gh-pages # The branch the action should deploy to.
+          folder: dist/spa # The folder the action should deploy.
+
