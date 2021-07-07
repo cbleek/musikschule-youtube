@@ -7,5 +7,5 @@ jobs:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v2
       - run: yarn
-      - run: node_modules/.bin/quasar build
+      - run: VUE_ROUTER_BASE=musikschule-youtube/ node_modules/.bin/quasar build
       - run: cp -a dist/spa/* docs/
